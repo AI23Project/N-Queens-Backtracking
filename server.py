@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request, jsonify
-
+from backtracking import backtracking, is_safe
 
 app = Flask(__name__)
 
@@ -12,7 +12,9 @@ def render_server():
 def N_queens():
     if request.method == 'POST':
         n_queens_input = request.args.get('n_queens_input', type=int)
-        return jsonify({"state_code": 200, "n_queens_input": n_queens_input, "result": "Your result here"})
+        result =  backtracking(n_queens_input)
+
+        return jsonify({"state_code": 200, "n_queens_input": n_queens_input, "result": result})
 
 
 if __name__ == "__main__":
