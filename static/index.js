@@ -1,4 +1,4 @@
-const dime_input = document.getElementById('dime_input')
+const n_queens_input = document.getElementById('n_queens_input')
 const btn = document.getElementById('btn')
 const err_message = document.getElementById('error_message')
 
@@ -9,7 +9,7 @@ btn.addEventListener("click", (e) => {
     }
     else {
         const click_btn = async () => {
-            const res = await fetch(`/?dime_input=${Math.round(dime_input.value)}`, {
+            const res = await fetch(`/?n_queens_input=${Math.round(dime_input.value)}`, {
               method: "POST",
             });
             const data = await res.json();

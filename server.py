@@ -11,8 +11,8 @@ def render_server():
 @app.route('/', methods=['POST'])
 def N_queens():
     if request.method == 'POST':
-        dime_input = request.args.get('dime_input', type=int)
-        return jsonify({"state_code": 200, "dime_input": dime_input, "result": "Your result here"})
+        n_queens_input = request.args.get('n_queens_input', type=int)
+        return jsonify({"state_code": 200, "n_queens_input": n_queens_input, "result": "Your result here"})
 
 
 if __name__ == "__main__":
