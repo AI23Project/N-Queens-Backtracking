@@ -16,7 +16,7 @@ const display_queens = (result) => {
       if (result[i] === j) {
         matrix[i].push("Q");
       } else {
-        matrix[i].push(0);
+        matrix[i].push('   ');
       }
     }
   }

@@ -1,5 +1,5 @@
 body{
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -8,6 +8,7 @@ body{
 }
 
 .form_container {
+  text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -65,7 +66,7 @@ button:hover {
 table {
     border-collapse: collapse;
     width: 100%;
-    margin: 0 auto;
+    margin: 20px auto;
   }
   
   th, td {
@@ -79,6 +80,8 @@ table {
   }
   
   td {
+    width: 30px;
+    height: 30px;
     background-color: white;
   }
   
@@ -86,6 +89,6 @@ table {
     background-color: #eee;
   }
   
-  .queen {
+  /* .queen {
     background-color: red;
-  }
+  } */
