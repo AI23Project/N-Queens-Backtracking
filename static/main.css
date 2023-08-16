@@ -19,6 +19,10 @@ body{
     border-radius: 20px;
 }
 
+label {
+    margin-bottom: 4px;
+}
+
 .form__input {
     width: 400px;
     height: 30px;
@@ -26,6 +30,23 @@ body{
     border-radius: 10px;
     border: none;
 }
+
+.solved_way_options {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .solved_way_option {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+  }
+  
+  .solved_way_option.active {
+    background-color: #ccc;
+  }
+
 button{
     background-color: rgba(22, 30, 133, 0.5);
     color: white;
@@ -40,3 +61,31 @@ button{
 button:hover {
     background-color: rgba(22, 30, 133, 0.9);
 }
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  th, td {
+    border: 1px solid black;
+    text-align: center;
+    padding: 5px;
+  }
+  
+  th {
+    background-color: #ccc;
+  }
+  
+  td {
+    background-color: white;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #eee;
+  }
+  
+  .queen {
+    background-color: red;
+  }

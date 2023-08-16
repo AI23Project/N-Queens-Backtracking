@@ -11,14 +11,26 @@
 <form>
       
         <div class="form_container">
-            <input type="number" name="n_queens_input" placeholder="Enter the number of Queens." class="form__input" id="n_queens_input" />
+            <label>number of queens</label>
+            <input type="number" name="n_queens_input" placeholder="Enter the number of Queens." class="form__input" id="n_queens_input" min="1" max="22" value="1"/>
+            <br>
+            <label>population size</label>
+            <input type="number" name="POPULATION_SIZE" placeholder="Enter POPULATION_SIZE." class="form__input" id="population_size" min="100" max="100000" step="100" value="100"/>
+            <br>
+            <label>max generations</label>
+            <input type="number" name="MAX_GENERATIONS" placeholder="Enter MAX_GENERATIONS." class="form__input" id="max_generations" min="10" max="1000" step="5" value="10"/>
             <hr>
             <button id="btn">Submit</button>
         <h1 id="error_message" style="color: rgba(221, 51, 51, 0.89); display:none">Invalid Request because of not send the number of Queens</h1>
         </div>
         <br>
-        <div id="result" style="text-align: center;">
-        </div>
+        <div onclick="get_selceted_solved_way()" class="solved_way_options" id="solved_way_options">
+            <div class="solved_way_option active" data-way="backtracking">backtracking</div>
+            <div class="solved_way_option" data-way="differential_evolution">differential evolution</div>
+          </div>
+        <br>
+        <table id="queens_table" style="text-align: center;">
+        </table>
 </form>
     </div>
 <script src="{{url_for('static',filename='index.js' )}}"></script>
