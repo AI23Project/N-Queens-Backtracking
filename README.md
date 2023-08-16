@@ -51,8 +51,8 @@ def backtracking(n):
 The code employs the backtracking algorithm to explore and backtrack through different configurations until a valid solution is found or all possibilities are exhausted.
 
 ### Diagrams
-![block_diagram](./block_backtrack.jpeg)
-![flow_diagram](./flowchart_backtrack.jpeg)
+![block_diagram](static/images/block_backtrack.jpeg)
+![flow_diagram](static/images/flowchart_backtrack.jpeg)
 
 
 # Differential Evolution Algo
@@ -154,5 +154,5 @@ To generate offspring, the algorithm loops over each individual in the populatio
 Finally, the population is replaced with the offspring population, and the process continues to the next generation.
 
 ### Diagrams
-![block_diagram_diff](./block_diff.jpeg)
-![flow_diagram_diff](./flowchart_diff.jpeg)
+![block_diagram_diff](static/images/block_diff.jpeg)
+![flow_diagram_diff](static/images/flowchart_diff.jpeg)
