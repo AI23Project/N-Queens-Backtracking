@@ -1,5 +1,3 @@
-Sure! Here's a more detailed explanation of how each function works in the code.
-
 ## Initialization
 
 ```python
